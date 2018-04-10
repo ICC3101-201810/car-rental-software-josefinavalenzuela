@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Sucursal
+    public class Sucursal
     {
-        string Nombre;
-        string Direccion;
+        public string Nombre;
+        public string Direccion;
         List<Vehiculo> Vehiculos = new List<Vehiculo>();
         List<Sucursal> Sucursales = new List<Sucursal>();
 
@@ -32,6 +32,18 @@ namespace ConsoleApp1
 
             return true;
             
+        }
+
+        public Sucursal GetSucursal(string n)
+        {
+            foreach (Sucursal i in Sucursales)
+            {
+                if (i.Nombre == n)
+                {
+                    return i;
+                }
+            }
+            return null;
         }
     }
 }

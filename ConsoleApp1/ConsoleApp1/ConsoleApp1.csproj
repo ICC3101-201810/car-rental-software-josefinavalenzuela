@@ -43,10 +43,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accesorio.cs" />
+    <Compile Include="Acuatico.cs" />
     <Compile Include="Arriendo.cs" />
     <Compile Include="ArriendoAcc.cs" />
+    <Compile Include="Auto.cs" />
+    <Compile Include="Camino.cs" />
+    <Compile Include="Camion.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Empresa.cs" />
+    <Compile Include="Ingresar.cs" />
+    <Compile Include="MaquinariaPesada.cs" />
+    <Compile Include="Moto.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

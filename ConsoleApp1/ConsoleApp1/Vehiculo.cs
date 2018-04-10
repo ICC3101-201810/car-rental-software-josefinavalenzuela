@@ -6,50 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Vehiculo
+    public abstract class Vehiculo
     {
-        string Tipo;
- 
-        string Patente;
-        public Vehiculo (string tipo, string patente)
-        {
-            Tipo = tipo;
-            Patente = patente;
-
-        }
-
-        public List<Vehiculo> IngresarVehiculos()
-        {
-
-            string termino = "";
-            List<Vehiculo> lista = new List<Vehiculo>();
-
-            while (termino == "")
-            {
-                Console.WriteLine("Ingrese el tipo de vehiculo que pertenecen a la sucursal y su patente");
-                string tipo = Console.ReadLine();
-                string patente1 = Console.ReadLine();
-                Vehiculo v = new Vehiculo(tipo, patente1);
-
-                lista.Add(v);
-
-                Console.WriteLine("ingrese fin si termino");
+        public string Tipo;
+        public string Patente;
+        public string Marca;
+        public string Modelo;
+        public string Ano;
 
 
-                if (tipo == "fin")
-                {
-                    termino = " ";
-                }
-            }
 
-            return lista;
 
-        }
-
-        public Vehiculo IdVehiculo(string id)
-        {
-            
-        }
 
 
     }

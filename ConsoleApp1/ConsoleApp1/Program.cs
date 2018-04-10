@@ -10,27 +10,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Ingresar i = new Ingresar();
 
             Console.WriteLine("Desea crear sucursal (1), desea gestionar un arriendo (2)");
             string respuesta = Console.ReadLine();
             if (respuesta == "1")
             {
-                Vehiculo h = new Vehiculo("Auto", "AAAA12");
-                Vehiculo g = new Vehiculo("Moto", "AAAA13");
-                List<Vehiculo> t = new List<Vehiculo>();
-                t.Add(h);
-                t.Add(g);
-                string n = "n";
-                string d = "d";
 
-                Sucursal f = new Sucursal(n, d, t);
-                
+             
+                i.IngresarSucursal();
 
-                List<Vehiculo> lista = h.IngresarVehiculos();
-                if (f.IngresarSucursal(lista))
-                {
-                    Console.WriteLine("Sucursal creada correctamente");
-                }
 
             }
 
@@ -41,31 +30,16 @@ namespace ConsoleApp1
 
                 if (c == "1")
                 {
-                    Cliente hola = new Cliente("josefina", "196868119");
-                    
-                    
-                
-                    hola.AgregarCliente();
+              
+                    i.AgregarCliente();
 
                 }
                 else if (c == "2")
                 {
-                    Cliente hola = new Cliente("josefina", "196868119");
 
-                    Console.WriteLine("Ingrese su id");
-                    string id = Console.ReadLine();
-                    hola.GetCliente(id);
+                    i.ArrriendoGeneral();
 
-                    Console.WriteLine("Ingrese id vehiculo, valor y terminos del contrato ");
-                    string IDV = Console.ReadLine();
-                    string valor = Console.ReadLine();
-                    string terminos = Console.ReadLine();
-
-
-
-
-
-                    
+   
 
                 }
             

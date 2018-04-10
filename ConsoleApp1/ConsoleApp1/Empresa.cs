@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         string Permiso;
 
-        public Empresa(string nombre, string id, string permiso): base(nombre, id)
+        public Empresa(string nombre, string id, string permiso, Sucursal sucursal): base(nombre, id, sucursal)
         {
             Permiso = permiso;
         }
