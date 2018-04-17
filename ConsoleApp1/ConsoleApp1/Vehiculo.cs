@@ -13,6 +13,8 @@ namespace ConsoleApp1
         public string Marca;
         public string Modelo;
         public string Ano;
+        public int Precio;
+        public int Disponibles;
 
 
 

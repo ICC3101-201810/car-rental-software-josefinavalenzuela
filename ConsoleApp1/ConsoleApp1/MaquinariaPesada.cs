@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         string Capacidad;
         List<Vehiculo> maquinaria = new List<Vehiculo>();
-        public MaquinariaPesada(string patente, string marca, string modelo, string ano, string capacidad)
+        public MaquinariaPesada(string patente, string marca, string modelo, string ano, string capacidad, int precio, int disponibles)
         {
             Capacidad = capacidad;
            
@@ -18,6 +18,8 @@ namespace ConsoleApp1
             Marca = marca;
             Modelo = modelo;
             Ano = ano;
+            Precio = precio;
+            Disponibles = disponibles;
        
         }
 

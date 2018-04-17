@@ -8,20 +8,24 @@ namespace ConsoleApp1
 {
     public class Arriendo
     {
+        public int Codigo;
         Cliente Cliente;
-        Vehiculo Vehiculo;
-        
+        public Vehiculo Vehiculo;
+        Sucursal Sucursal;
         DateTime FechaInicio;
-        string Total;
+        public bool Vigencia;
+        
         string Terminos;
 
-        public Arriendo(Cliente cliente, Vehiculo vehiculo, DateTime fechaInicio, string total, string terminos)
+        public Arriendo(int codigo, Cliente cliente, Vehiculo vehiculo, DateTime fechaInicio, string terminos, Sucursal sucursal, bool vigencia)
         {
+            Codigo = codigo;
             Cliente = cliente;
             Vehiculo = vehiculo;
-            
+            Sucursal = sucursal;
             FechaInicio = fechaInicio;
-            Total = total;
+            Vigencia = vigencia;
+            
             Terminos = terminos;
 
         }

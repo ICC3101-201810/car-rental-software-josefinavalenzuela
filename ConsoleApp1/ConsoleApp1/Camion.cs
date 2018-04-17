@@ -10,14 +10,16 @@ namespace ConsoleApp1
     {
         string Capacidad;
         
-        public Camion(string patente, string marca, string modelo, string ano, string capacidad)
+        public Camion(string patente, string marca, string modelo, string ano, string capacidad, int precio, int disponibles)
         {
             Capacidad = capacidad;
             Ano = ano;
             Patente = patente;
             Marca = marca;
             Modelo = modelo;
-        
+            Precio = precio;
+            Disponibles = disponibles;
+
 
 
         }

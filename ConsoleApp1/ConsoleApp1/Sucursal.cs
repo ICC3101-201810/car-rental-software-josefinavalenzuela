@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         public string Nombre;
         public string Direccion;
-        List<Vehiculo> Vehiculos = new List<Vehiculo>();
+        public List<Vehiculo> Vehiculos = new List<Vehiculo>();
         List<Sucursal> Sucursales = new List<Sucursal>();
 
         public Sucursal(string nombre, string direccion, List<Vehiculo> vehiculos)
@@ -34,16 +34,5 @@ namespace ConsoleApp1
             
         }
 
-        public Sucursal GetSucursal(string n)
-        {
-            foreach (Sucursal i in Sucursales)
-            {
-                if (i.Nombre == n)
-                {
-                    return i;
-                }
-            }
-            return null;
-        }
     }
 }
